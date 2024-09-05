@@ -1,15 +1,15 @@
 # Software Design Document
 
-## Project Name: XXXX
+## Project Name: Nutra Graph
 ## Group Number: 006
 
-## Team members
+### Team members
 
-| Student Number | Name        | 
-|----------------|-------------|
-| s5369275       | Luke Hewitt |
-| s222222        | Full name   | 
-| s333333        | Full name   | 
+| Student No. | Full Name             | GitHub Username | Contribution (sum to 100%) | 
+|-------------|-----------------------|-----------------|----------------------------|
+| s5369275    | Luke Hewitt           | JavaTheHut17    | 33.3% or Equal             |
+| s222222     | Muhammad Budiman      | M-HaekalAdlan   | 33.3% or Equal             | 
+| s333333     | Ned Keyte             | nedkeyte        | 33.3% or Equal             | 
 
 
 <div style="page-break-after: always;"></div>

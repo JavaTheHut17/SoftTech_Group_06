@@ -5,25 +5,27 @@
 
 ### Team members
 
-| Student No. | Full Name   | GitHub Username | Contribution (sum to 100%) | 
-|-------------|-------------|-----------------|----------------------------|
-| s5369275    | Luke Hewitt | JavaTheHut17    | 33.3% or Equal             |
-| s222222     | Full name   | xxx             | 33.3% or Equal             | 
-| s333333     | Full name   | xxx             | 33.3% or Equal             | 
+| Student No. | Full Name             | GitHub Username | Contribution (sum to 100%) | 
+|-------------|-----------------------|-----------------|----------------------------|
+| s5369275    | Luke Hewitt           | JavaTheHut17    | 33.3% or Equal             |
+| s222222     | Muhammad Budiman      | M-HaekalAdlan   | 33.3% or Equal             | 
+| s333333     | Ned Keyte             | nedkeyte        | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
-Please Describe what you have accomplished in this group project.
+Please Describe what you have accomplished in this group project:
+
 - s5369275, Luke Hewitt
-  - Accomplishments: Project Plan.
-- s222222, Full name
-  - Accomplishments: Describe what you have completed or achieved
-- s333333, full name
-  - Accomplishments: Describe what you have completed or achieved
+  - Accomplishments: Project Plan 1 - 4.
+  
+- s222222, Muhammad Budiman
+  - Accomplishments: Software Design 1 - 2.4 + 4.2.
+  
+- s333333, Ned Keyte
+  - Accomplishments: Software Design 3.1 - 4.1.
+
 
 <div style="page-break-after: always;"></div>
-
-
 
 # Table of Contents
 
@@ -33,7 +35,11 @@ Please Describe what you have accomplished in this group project.
     * [1.2 Project Stakeholders](#12-project-stakeholders)
     * [1.2.1 Internal Stakeholders](#121-internal-stakeholders)
     * [1.2.2 External Stakeholders](#122-external-stakeholders)
-    * [1.3 Project Scope](#13-project-scope)
+  * [1.3 Project Scope](#13-project-scope)
+    * [1.3.1 Scope Statement](#131-scope-statement)
+    * [1.3.2 Project Deliverables](#132-project-deliverables)
+    * [1.3.3 Project Acceptance Criteria](#133-project-acceptance-criteria)
+    * [1.3.4 Project Exclusions](#134-project-exclusions-)
   * [2. Work Breakdown Structure](#2-work-breakdown-structure)
   * [3. Activity Definition Estimation](#3-activity-definition-estimation)
   * [4. Gantt Chart](#4-gantt-chart)
@@ -86,10 +92,68 @@ The objective of this project (Nutra Graph) is to develop a food and nutrition s
 
     - Investors: Providing financial stake in the project.
 
-### 1.3 Project Scope
+## 1.3 Project Scope
 
 ### 1.3.1 Scope Statement
 
+Nutra Graph will be designed to utilise nutritional databases and provide a graphical breakdown of the data allowing healthcare professionals, and others to easily distinguish patterns and common occurrences in the data relevant to their field.
+
+### 1.3.2 Project Deliverables
+
+1. Functions:
+
+    - Search Food items: The project will provide a search bar that will enable users to search for specific types of food in the database.
+    - Nutrition Breakdown: The user selects a food item in the database for the software to break down and display in relative means, eg Pie Graph & Bar Graphs.
+    - Nutrition Range Filter: Allows the user to select a nutritional component and input a min-max value and have relative foods listed that fall into that category.
+    - Nutrition Level Filter: Allows users to filter food based on levels, High ( > 66% ), Medium ( 33% - 66% ) ,Low ( < 33% ) based on Fat, Protein, Carbohydrates, Sugar, and Nutritional Density.
+    - Nutrition Component Organiser: Allows user to filter food on the database based on the Highest or Lowest nutritional component eg.. Foods with the highest Magnesium per 100g.
+
+
+2. Documents/Reports:
+
+    - Project Plan Document
+    - Software Design Document
+    - Work Breakdown Structure
+    - Gant Chart 
+    - Use Case Diagram 
+    - Software Design Flow Chart 
+    - Structural Design Chart
+    - Visual Design Wireframe
+   
+
+3. Software
+
+    - Nutra Graph Software
+
+### 1.3.3 Project Acceptance Criteria
+
+1. Functionality
+
+    As defined in the Project Deliverables.
+
+    - Nutra Graph must allow users to search for food items in the database and retrieve said items.
+    - The software will allow users to select a food and have data displayed in a Pie & Bar Graph format.
+    - The software will allow users to select a nutritional component and input a min/max value to list food that falls into the selected range.
+    - The software will allow users to filter foods by nutritional content level Low, Medium and High.
+    - The software will allow users to filter food in the database based on the Highest or Lowest nutritional component levels, eg.. highest /lowest fat content. 
+
+2. Performance 
+
+    - Software is quick and responsive with sub 2 second search times.
+    - Software can handle a large database > 2300 food Items.
+    - Software can be used on all major OS, Windows, Mac OS, Linux.
+
+3. User Interface 
+
+    - Software Must be user Friendly, easy to use and navigate.
+    - User Friendly design, High contrast colours and clear text.
+    - Data must be displayed clearly and in a usable fashion. 
+
+4. Security 
+
+    - User data must be handled correctly and securely, meeting industry standards on encryption.
+
+### 1.3.4 Project Exclusions 
 
 
 
