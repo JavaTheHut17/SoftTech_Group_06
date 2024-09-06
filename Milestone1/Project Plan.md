@@ -155,13 +155,24 @@ Nutra Graph will be designed to utilise nutritional databases and provide a grap
 
 ### 1.3.4 Project Exclusions 
 
+1. Ongoing Maintenance 
+
+    - This software is stand alone and will not undertake any ongoing maintenance or updates from our team once the final product is handed over.
+
+2. Updates To Database 
+
+    - No additional updates to the database will continue once the project is handed over.
+
+3. Mobile Application.
+
+    - This is a standalone software no mobile application will be delivered.
 
 
 ## 2. Work Breakdown Structure
 
 Include the Work Breakdown Structure (WBS) for the entire project. WBS should be presented as a hierarchical diagram. Use the elements from the WBS to define activities in Section 3, and schedule these activities in the Gantt Chart in Section 4. Ensure all project activities are considered and included in the WBS.
 
-![WBS](./WBS.jpg)
+![WBS](./Images/WBS.png)
 
 ## 3. Activity Definition Estimation
 
