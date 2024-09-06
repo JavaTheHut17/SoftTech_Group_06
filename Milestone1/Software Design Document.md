@@ -129,13 +129,47 @@ Example Functional Requirements:
 Include at least 5 use cases, each corresponding to a specific function.
 
 
-| Use Case ID    | xxx  |
-|----------------|------|
-| Use Case Name  | xxxx |
-| Actors         | xxxx |
-| Description    | xxxx |
-| Flow of Events | xxxx |
-| Alternate Flow | xxxx |
+| Use Case ID    | 01                                                                                                                                                                                                          |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case Name  | Search for food items                                                                                                                                                                                       |
+| Actors         | Individuals, doctor, nutritionist, researcher                                                                                                                                                               |
+| Description    | The user searches for a specific food item by name or category to retrieve its detailed nutritional information.                                                                                            |
+| Flow of Events | 1.  The user enters a food item name or selects a category. 2. The system retrieves matching food items from the database. 3. The system displays the food items along with their basic nutritional details. |
+                                                                                                                                                                                                                                                                            |
+
+
+| Use Case ID    | 02                                                                                                                                                                                                                         |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case Name  | View detailed nutritional information                                                                                                                                                                                      |
+| Actors         | Individuals, doctors, nutritionist, researcher                                                                                                                                                                             |
+| Description    | The user views the detailed nutritional profile of a selected food item, including macronutrients and micronutrients.                                                                                                      |
+| Flow of Events | 1. The user selects a food item to view its nutritional profile. 2. The system retrieves the full nutritional breakdown (macronutrients, micronutrients, etc.). 3. The system displays the nutritional profile to the user. |
+                                       |
+
+
+| Use Case ID    | 03                                                                                                                                                                                                                                                                                                                                                       |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case Name  | Track nutritional goals                                                                                                                                                                                                                                                                                                                                  |
+| Actors         | Individual (fitness enthusiast), nutritionist                                                                                                                                                                                                                                                                                                            |
+| Description    | The user tracks their daily or weekly intake of nutrients (e.g., calories, protein, fats) and views their progress towards specific dietary goals.                                                                                                                                                                                                       |
+| Flow of Events | 1. The user adds food items to their daily nutritional log. 2. The system calculates the total intake of calories, protein, fats, carbohydrates, and other nutrients. 3. The system displays progress towards the user’s nutritional goals (e.g., calories consumed vs. goal). 4. The user views a summary of their daily or weekly intake and progress. |
+                               
+
+| Use Case ID    | 04                                                                                                                                                                                                                                                                                                     |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case Name  | Save and Revisit Food Preferences                                                                                                                                                                                                                                                                      |
+| Actors         | Individuals, nutritionist, doctors                                                                                                                                                                                                                                                                     |
+| Description    | The user saves specific food items or searches and revisits them later for easy access to frequently used nutritional data.                                                                                                                                                                            |
+| Flow of Events | 1. The user selects a food item or search and saves it to their account. 2. The system stores the saved item or search in the user's account. 3. The user logs in at a later time and accesses the saved searches or food items. 4. The system displays the saved information for the user’s reference |
+                                                                                                                                                                                                                                                                                                |
+
+
+| Use Case ID    | 05                                                                                                                                                                                                                                                                                                                                                |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case Name  | Filter Food Items by Nutritional Content                                                                                                                                                                                                                                                                                                          |
+| Actors         | Individuals, nutritionist, doctors                                                                                                                                                                                                                                                                                                                |
+| Description    | The user filters food items based on specific nutritional criteria, such as low-fat, high-protein, or vitamin-rich foods.                                                                                                                                                                                                                         |
+| Flow of Events | 1. The user selects specific filtering criteria for food items (e.g., low-carb, rich in iron). 2. The system filters the database for food items that match the selected criteria. 3. The system displays the filtered food items that meet the nutritional criteria. 4. The user can further refine or select food items from the filtered list. |
 
 
 
