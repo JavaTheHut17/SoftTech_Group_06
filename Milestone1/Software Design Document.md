@@ -123,7 +123,7 @@ Example Functional Requirements:
 
 ### 2.3 Use Case Diagram
  
-![Use Case Diagram](./UCD_Milestone.png)
+![Use Case Diagram](Images/UCD_Milestone.png)
 
 ### 2.4 Use Cases
 Include at least 5 use cases, each corresponding to a specific function.
@@ -182,7 +182,7 @@ Example:
 
 ### 4.2	Visual Design
 
-![Visual Design](./wireframe_visual_design.png)
+![Visual Design](Images/wireframe_visual_design.png)
 
 
 

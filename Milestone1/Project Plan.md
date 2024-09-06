@@ -155,6 +155,17 @@ Nutra Graph will be designed to utilise nutritional databases and provide a grap
 
 ### 1.3.4 Project Exclusions 
 
+1. Ongoing Maintenance 
+
+    - This software is stand alone and will not undertake any ongoing maintenance or updates from our team once the final product is handed over.
+
+2. Updates To Database 
+
+    - No additional updates to the database will continue once the project is handed over.
+
+3. Mobile Application.
+
+    - This is a standalone software no mobile application will be delivered.
 
 
 ## 2. Work Breakdown Structure
