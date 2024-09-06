@@ -49,27 +49,68 @@
 
 ### 1.1 Problem Background
 
-- Problem Identification: What problem does this system solve?
-- Dataset: What is the dataset used?
-- Data Input/Output: What kind of data input and output is required?
-- Target Users: Who will use the system, and why?
+  A lot of people find it hard to keep track of their diet. This software application will help people to access accurate information
+  regarding of foods they consume in order to support their diet progress, macro nutrients, and overall health from dataset
+  this application provides.
+
+  The dataset used for this software is a comprehensive foods nutritional database from all around the world. This dataset
+  provides more than 30 attributes for each food item, such as calories, carbohydrates, protein, sugar, calcium, etc. 
+  User can input what food they want to see in search query, and the system will provide all the information based on the input.
+  
+  Target user for this software application are:
+  1. Individuals: People who trying to monitor their food intake or keep track of their diet
+  2. Healthcare Professionals: Doctors, dietitians, and nutritionists can use this software to help them give proper
+      nutritional content to their patients.
+  3. Researcher: They can use this software for their data collection and analysis.
 
 ### 1.2 System capabilities/overview
 
-- System Functionality: What will the system do?
-- Features and Functionalities: Describe the key features and functionalities of the system.
+  This software has multiple functionalities that can help the convenience for users, such as:
+1.	Food Item Search: Users will be able to find specific food they want to know by write the food name in the search box.
+2.	Nutritional Breakdown: The system will provide a detailed nutritional breakdown for every food items.
+3.	Filtering and Sorting: Users able to filter and sort items by various criteria based on their preference, such as: high-protein, low fat
+
+
 
 ### 1.3	Benefit Analysis
 
-How will this system provide value or benefit?
+This software offers several key benefits, such as:
+1.	Convenience: Users can access this software from anywhere as long they have internet connections .
+2.	Health and societal impact: This software promote better nutrition habits and public health awareness.
+3.	Accurate information: Users will get accurate information regarding nutritional content of foods to make healthier choice.
+
 
 ## 2. Requirements
 
 ### 2.1 User Requirements
 
-Detail how users are expected to interact with or use the program. What functionalities must the system provide from the end-user perspective? This can include both narrative descriptions and a listing of user needs.
+Here are some examples describing the functionalities from the end-user’s perspective
+#### Fictional user:
 
-Note: Since no specific client or user is assigned, you may create a fictional user. Who do you envision using your software?
+A. John Thompson – fitness enthusiast
+•	Age: 26
+•	Needs: Want to focus on his diet. Need to find high-protein, low-fat foods for his macronutrient daily intake
+Expected user interactions:
+1.	Searching and filtering for food items
+
+•	Description: John will be able to search for high-protein, low-fat food, and the system will retrieve all the food that have that criteria.
+
+•	User need:
+
+o	Simple search interface
+
+o	Quick search result
+
+o	Filtering options based on nutrients values
+2.	Detailed nutritional information
+
+•	Description: John will get detail information about his food item, such as calories, fat, carbohydrates, proteins, fiber, etc.
+
+•	User need: 
+
+o	Clear and detailed nutritional data
+
+o	Easy to understand breakdown of macronutrients
 
 ### 2.2	Software Requirements
 Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
@@ -81,10 +122,8 @@ Example Functional Requirements:
 - etc …
 
 ### 2.3 Use Case Diagram
-Provide a system-level Use Case Diagram illustrating all required features.
-
-Example:  
-![Use Case Diagram](./UCD.png)
+ 
+![Use Case Diagram](./UCD_Milestone.png)
 
 ### 2.4 Use Cases
 Include at least 5 use cases, each corresponding to a specific function.
@@ -142,14 +181,8 @@ Example:
 ![Structural Design](./Structural_Design.png)
 
 ### 4.2	Visual Design
-Include all wireframes or mock-ups of the interface. Provide a discussion, explanation, and justification for your design choices. Hand-drawn wireframes are acceptable.
 
-- Interface Components: Clearly label all components.
-- Screens/Menus: Provide wireframes for different screens, menus, and options.
-- Design Details: Focus on the layout and size of components; color and graphics are not required. 
-
-Example:  
-![Visual Design](./visual_design.png)
+![Visual Design](./wireframe_visual_design.png)
 
 
 
