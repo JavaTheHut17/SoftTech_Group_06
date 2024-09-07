@@ -176,19 +176,42 @@ Include the Work Breakdown Structure (WBS) for the entire project. WBS should be
 
 ## 3. Activity Definition Estimation
 
-Define the activities required for your project based on the WBS, and assign responsibilities to team members. Each activity should be numbered and correspond with your Gantt chart. Provide estimated durations for each activity to facilitate Gantt chart preparation.
+Below defines the activity definition estimates for the Nutra Graph project. 
 
-| Activity #No | Activity Name | Brief Description | Duration | Responsible Team Members |
-|--------------|---------------|-------------------|----------|--------------------------|
-| xxx          | xxx           | xxx               | xxx      | xxx \& yyy               |
-| xxxx         | xxx           | xxx               | xxx      | All                      |
-| xxxx         | xxx           | xxx               | xxx      | xxx                      |
+| Activity #No | Activity Name                  | Brief Description                              | Duration | Responsible Team Members |
+|--------------|--------------------------------|------------------------------------------------|----------|--------------------------|
+| 1.1          | Define Project Overview        | Define Project Overview                        | 2 hrs    | All                      |
+| 1.2          | Assign Project Manager         | Assign project manager                         | 1 hrs    | All                      |
+| 1.3          | Assign Team Roles              | Assigning team roles                           | 1 hrs    | All                      |
+| 1.4          | Define Project Stakeholders    | Defining project stakeholders                  | 2 hrs    | Luke                     |
+| 1.5          | Define Project Scope           | Defining Project scope                         | 2 hrs    | Luke                     |
+| 2.1          | Create Project Plan            | Creating project plan                          | 3 Day    | Luke                     |
+| 2.2          | Activity Definition Estimation | Estimating Activity Times                      | 1 Day    | Luke                     |
+| 2.3          | Create WBS                     | Creating Work Break down Structure             | 1 Day    | Luke                     |
+| 2.4          | Create Gantt Chart             | Creating Gantt Chart                           | 2 Day    | Luke                     |
+| 3.1          | Define System Vision           | Defining System Vision                         | 1 Day    | Muhammad                 |
+| 3.2          | Define User Requirements       | Defining User requirements                     | 1 Day    | Muhammad                 |
+| 3.3          | Define Software Requirements   | Defining software requirements for the system. | 1 Day    | Muhammad                 |
+| 3.4          | Use case's + Diagram           | Create the Use cases for the system & Diagram  | 2 Day    | Muhammad                 |
+| 3.5          | Software Design & Components   | Software Design flow chart + System Components | 1 Day    | Ned                      |
+| 3.6          | Structural Design              | Defining Data Structure + data sources         | 1 Day    | Ned                      |
+| 3.7          | Detailed Design                | Sudo code for software functions               | 1 Day    | Ned                      |
+| 3.8          | Wireframe Design               | Wireframe design of GUI                        | 1 Day    | Muhammad                 |
+| 4.1          | GUI Development                | GUI Development                                | 7 Day    | All                      |
+| 4.2          | Database Integration           | Database integration                           | 7 Day    | All                      |
+| 4.3          | Database Algorithm             | Algorithm and sorting of database              | 6 Day    | All                      |
+| 4.4          | Pie & Bar Graph Integration    | Integration of Pie and bar graph for project   | 3 Day    | All                      |
+| 5.1          | Integration Testing            | Testing of software                            | 1 Day    | All                      |
+| 5.2          | User Acceptance Testing        | User Acceptance Testing                        | 1 Day    | All                      |
+| 5.3          | Bug Fixes                      | rectification of any bugs in software.         | 3 Day    | All                      |
+| 6.1          | Document Handover              | Submission                                     | 2 hrs    | All                      |
+| 6.1          | Software Deployment            | Software Deployment                            | 2 hrs    | All                      |
+
 
 ## 4. Gantt Chart
-You have to use the provided Gantt chart template.  
 
-Use the provided Gantt chart template to list all items from the Activity Definition along with relevant estimates 
-and scheduling. Ensure that the Gantt chart reflects the activity definitions from Section 3. Track actual start 
-times and durations. Besides including Gantt chart here, you should also submit your Gantt chart file separately.
-![Gantt Chart](./Gantt_chart.png)
+Please see below the proposed Gantt Chart for Nutra Graph. 
+
+
+![Gantt Chart](./Images/GantChart.png)
 
