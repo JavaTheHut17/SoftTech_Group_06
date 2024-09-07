@@ -18,7 +18,7 @@ Please Describe what you have accomplished in this group project:
 - s5369275, Luke Hewitt
   - Accomplishments: Project Plan 1 - 4.
   
-- s222222, Muhammad Budiman
+- s5396486, Muhammad Budiman
   - Accomplishments: Software Design 1 - 2.4 + 4.2.
   
 - s333333, Ned Keyte
