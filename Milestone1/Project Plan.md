@@ -9,7 +9,7 @@
 |-------------|-----------------------|-----------------|----------------------------|
 | s5369275    | Luke Hewitt           | JavaTheHut17    | 33.3% or Equal             |
 | s5396486    | Muhammad Budiman      | M-HaekalAdlan   | 33.3% or Equal             | 
-| s333333     | Ned Keyte             | nedkeyte        | 33.3% or Equal             | 
+| s5391821     | Ned Keyte             | nedkeyte        | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
@@ -21,7 +21,7 @@ Please Describe what you have accomplished in this group project:
 - s5396486, Muhammad Budiman
   - Accomplishments: Software Design 1 - 2.4 + 4.2.
   
-- s333333, Ned Keyte
+- s5391821, Ned Keyte
   - Accomplishments: Software Design 3.1 - 4.1.
 
 
