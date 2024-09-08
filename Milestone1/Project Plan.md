@@ -5,11 +5,11 @@
 
 ### Team members
 
-| Student No. | Full Name             | GitHub Username | Contribution (sum to 100%) | 
-|-------------|-----------------------|-----------------|----------------------------|
-| s5369275    | Luke Hewitt           | JavaTheHut17    | 33.3% or Equal             |
-| s5396486    | Muhammad Budiman      | M-HaekalAdlan   | 33.3% or Equal             | 
-| s5391821     | Ned Keyte             | nedkeyte        | 33.3% or Equal             | 
+| Student No.  | Full Name              | GitHub Username | Contribution (sum to 100%) | 
+|--------------|------------------------|-----------------|----------------------------|
+| s5369275     | Luke Hewitt            | JavaTheHut17    | Equal                      |
+| s5396486     | Muhammad Budiman       | M-HaekalAdlan   | Equal                      | 
+| s5391821     | Ned Keyte              | nedkeyte        | 0%                         | 
 
 ### Brief Description of Contribution
 
@@ -205,7 +205,7 @@ Below defines the activity definition estimates for the Nutra Graph project.
 | 5.2          | User Acceptance Testing        | User Acceptance Testing                        | 1 Day    | All                      |
 | 5.3          | Bug Fixes                      | rectification of any bugs in software.         | 3 Day    | All                      |
 | 6.1          | Document Handover              | Submission                                     | 2 hrs    | All                      |
-| 6.1          | Software Deployment            | Software Deployment                            | 2 hrs    | All                      |
+| 6.2          | Software Deployment            | Software Deployment                            | 2 hrs    | All                      |
 
 
 ## 4. Gantt Chart

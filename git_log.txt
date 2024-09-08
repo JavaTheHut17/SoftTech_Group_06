@@ -1,5 +1,29 @@
-* 4281f5b (HEAD -> main, origin/main, origin/HEAD, dev1) Test File Upload 2
-* 66b3555 Markdown to PDF
-* 52d77e2 Test File Added
-* 03c2902 Initial Python Program Added
-* f472f8a Initial commit
+* 0b2565e 2024-09-08 by [JavaTheHut17] | Misc Changes (HEAD -> main, origin/main, origin/HEAD)
+* 42f2e65 2024-09-08 by [JavaTheHut17] | Misc Changes
+* 0aa7f0e 2024-09-08 by [M-HaekalAdlan] | update s-number
+* db7fcb8 2024-09-07 by [nedkeyte] | test change - edited readme
+* 79bf616 2024-09-07 by [JavaTheHut17] | Added( 4.Gantt Chart, 3. Activity Def Estimations)
+*   0fada16 2024-09-07 by [M-HaekalAdlan] | Merge branch 'main' of https://github.com/JavaTheHut17/SoftTech_Group_06
+|\  
+| * 83f06e3 2024-09-06 by [JavaTheHut17] | In Progress(PP: Gant Chart )
+| * 4336d83 2024-09-06 by [JavaTheHut17] | Added(PP: 2. Work Breakdown Structure )
+| * f4a1583 2024-09-06 by [JavaTheHut17] | Added( Folders & Clean up )
+| * 1fbf0b9 2024-09-06 by [JavaTheHut17] | Added( PP: 1.3 ) Misc Changes & Clean up
+* | 6a921c7 2024-09-07 by [M-HaekalAdlan] | added 2.4
+|/  
+* 8014563 2024-09-06 by [M-HaekalAdlan] | added UCD and wireframe png
+* 89887d5 2024-09-06 by [M-HaekalAdlan] | Updated Software Design Document.md
+* a631c6e 2024-09-06 by [M-HaekalAdlan] | added software design document pdf
+* 876b4d6 2024-09-05 by [JavaTheHut17] | In Progress( PP: 1.3+ )
+* ae64228 2024-09-05 by [JavaTheHut17] | Added( PP: 1-1.2 )
+* b22e7cd 2024-09-05 by [JavaTheHut17] | Data Base added.
+*   6d652f0 2024-08-05 by [JavaTheHut17] | Merge remote-tracking branch 'origin/main'
+|\  
+| * 48adea9 2024-07-28 by [M-HaekalAdlan] | updated git log
+| * 4281f5b 2024-07-28 by [M-HaekalAdlan] | Test File Upload 2
+* | f5fb887 2024-08-05 by [JavaTheHut17] | Milestone 1 files.
+|/  
+* 66b3555 2024-07-27 by [JavaTheHut17] | Markdown to PDF
+* 52d77e2 2024-07-27 by [JavaTheHut17] | Test File Added (Production_01)
+* 03c2902 2024-07-27 by [JavaTheHut17] | Initial Python Program Added
+* f472f8a 2024-07-27 by [Luke H] | Initial commit
