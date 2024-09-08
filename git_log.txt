@@ -1,4 +1,5 @@
-* 0b2565e 2024-09-08 by [JavaTheHut17] | Misc Changes (HEAD -> main, origin/main, origin/HEAD)
+* 8e3c99e 2024-09-08 by [JavaTheHut17] | Added:(PDF Files, Git Log.txt) (HEAD -> main, origin/main, origin/HEAD)
+* 0b2565e 2024-09-08 by [JavaTheHut17] | Misc Changes
 * 42f2e65 2024-09-08 by [JavaTheHut17] | Misc Changes
 * 0aa7f0e 2024-09-08 by [M-HaekalAdlan] | update s-number
 * db7fcb8 2024-09-07 by [nedkeyte] | test change - edited readme
