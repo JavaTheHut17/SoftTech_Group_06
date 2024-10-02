@@ -17,9 +17,9 @@ Briefly describe what this feature does.
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.  
-![1](./visual_design.png)
+![1](images/visual_design.png)
 
-![2](./visual_design.png)
+![2](images/visual_design.png)
 
 ---
 
@@ -33,9 +33,9 @@ Briefly describe what this feature does.
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.  
-![1](./visual_design.png)
+![1](images/visual_design.png)
 
-![2](./visual_design.png)
+![2](images/visual_design.png)
 
 ---
 
@@ -49,9 +49,9 @@ Briefly describe what this feature does.
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.    
-![1](./visual_design.png)
+![1](images/visual_design.png)
 
-![2](./visual_design.png)
+![2](images/visual_design.png)
 
 
 ---
@@ -66,9 +66,9 @@ Briefly describe what this feature does.
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.    
-![1](./visual_design.png)
+![1](images/visual_design.png)
 
-![2](./visual_design.png)
+![2](images/visual_design.png)
 
 
 ---
@@ -83,9 +83,9 @@ Briefly describe what this feature does.
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.    
-![1](./visual_design.png)
+![1](images/visual_design.png)
 
-![2](./visual_design.png)
+![2](images/visual_design.png)
 
 
 ---

@@ -37,7 +37,7 @@ pytest --cov=all_functions --cov-report=term
 ```
 Note: In the command above, the file/module `all_functions` does not include the .py extension. all_functions.py should contain all the tested functions related to the five required features.
 
-![statement_coverage](./statement_coverage.png)
+![statement_coverage](images/statement_coverage.png)
 
 ## 3. **Branch Coverage Test**
 
@@ -55,4 +55,4 @@ pytest --cov=all_functions --cov-branch --cov-report=term
 ```
 Note: In the command above, the file/module `all_functions` does not include the .py extension. all_functions.py should contain all the tested functions related to the five required features.
 
-![statement_coverage](./branch_coverage.png)
+![statement_coverage](images/branch_coverage.png)
