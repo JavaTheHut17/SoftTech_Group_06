@@ -2,36 +2,18 @@
 import pandas as pd
 
 
-def range_filter():
+def range_filter(nutri_component, max_n_value, min_n_value, data):
 
-    db = pd.read_csv("DataBase/Food_Nutrition_Dataset.csv")
+    db = pd.read_csv(data)
 
-    options = [
-        'Caloric Value', 'Fat', 'Saturated Fats', 'Monounsaturated Fats',
-        'Polyunsaturated Fats', 'Carbohydrates', 'Sugars', 'Protein', 'Dietary Fiber',
-        'Cholesterol', 'Sodium', 'Water', 'Vitamin A', 'Vitamin B1', 'Vitamin B11',
-        'Vitamin B12', 'Vitamin B2', 'Vitamin B3', 'Vitamin B5', 'Vitamin B6',
-        'Vitamin C', 'Vitamin D', 'Vitamin E', 'Vitamin K', 'Calcium', 'Copper',
-        'Iron', 'Magnesium', 'Manganese', 'Phosphorus', 'Potassium', 'Selenium',
-        'Zinc', 'Nutrition Density'
-        ]
-
-# print(enumerate(options))
-    for i, listOption in enumerate(options): print(i, listOption)
-
-    nutri_component = int(input("Enter Nutrient Component number : "))
-    max_n_value = float(input("Enter Max_Value : "))
-    min_n_value = float(input("Enter Min_Value : "))
-
-    selection = nutri_component
-
-    nutrition_name = options[selection]
+    nutrition_name = nutri_component
 
     tf_filter = (min_n_value <= db[nutrition_name]) & (db[nutrition_name] <= max_n_value)
-
+    res =[]
     for j in range(len(tf_filter)):
         if tf_filter[j]:
-            print(f"{db['food'].iloc[j]}, {nutrition_name}: {db[nutrition_name].iloc[j]}")
+            res.append(f"{db['food'].iloc[j]}, {nutrition_name}: {db[nutrition_name].iloc[j]}")
 
+    return print(res)
 
-range_filter()
+range_filter('Vitamin E', 0.08, 0.079, 'DataBase/Food_Nutrition_Dataset.csv')
