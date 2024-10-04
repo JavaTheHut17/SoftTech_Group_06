@@ -7,14 +7,14 @@ def test_range_filter():
 
     db = 'DataBase/Food_Nutrition_Dataset.csv'
 
-    expect_res = ['rice bowl with chicken, Vitamin E: 0.08', 'strawberry topping, Vitamin E: 0.079',
-                  'instant white rice raw, Vitamin E: 0.079', 'strawberries, Vitamin E: 0.079',
-                  'sage ground, Vitamin E: 0.08', 'navy beans raw, Vitamin E: 0.08',
-                  'navy beans cooked, Vitamin E: 0.08', 'veal thymus cooked, Vitamin E: 0.079',
-                  'fruit yogurt, Vitamin E: 0.079', 'instant cappuccino powder, Vitamin E: 0.08',
-                  'pineapple orange juice, Vitamin E: 0.079', 'chestnuts roasted, Vitamin E: 0.08',
-                  'hot chile pepper dried, Vitamin E: 0.079', 'dried tomatoes, Vitamin E: 0.079',
-                  'shiitake mushrooms cooked, Vitamin E: 0.08']
+    expect_res = [{'rice bowl with chicken, Vitamin E: 0.08'}, {'strawberry topping, Vitamin E: 0.079'},
+                  {'instant white rice raw, Vitamin E: 0.079'}, {'strawberries, Vitamin E: 0.079'},
+                  {'sage ground, Vitamin E: 0.08'}, {'navy beans raw, Vitamin E: 0.08'},
+                  {'navy beans cooked, Vitamin E: 0.08'}, {'veal thymus cooked, Vitamin E: 0.079'},
+                  {'fruit yogurt, Vitamin E: 0.079'}, {'instant cappuccino powder, Vitamin E: 0.08'},
+                  {'pineapple orange juice, Vitamin E: 0.079'}, {'chestnuts roasted, Vitamin E: 0.08'},
+                  {'hot chile pepper dried, Vitamin E: 0.079'}, {'dried tomatoes, Vitamin E: 0.079'},
+                  {'shiitake mushrooms cooked, Vitamin E: 0.08'}]
 
     func_res = range_filter('Vitamin E', 0.08, 0.079, db)
 
