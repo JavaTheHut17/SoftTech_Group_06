@@ -1,5 +1,4 @@
 
-
 import pandas as pd
 
 def high_med_low_filter(nutri_component,high,med,low,data):
@@ -40,9 +39,6 @@ def high_med_low_filter(nutri_component,high,med,low,data):
             if value_filter[i]:
                 res.append({f"{db['food'].iloc[i]}, {nutrition_name}: {db[nutrition_name].iloc[i]}"})
         return res
-
-
-# high_med_low_filter('Vitamin D', high=False, med=True, low=False, data='DataBase/Food_Nutrition_Dataset.csv')
 
 
 

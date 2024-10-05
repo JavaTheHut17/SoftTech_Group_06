@@ -1,5 +1,4 @@
 
-
 import pandas as pd
 
 def high_low_filter(nutri_component, high, low, data):
@@ -29,6 +28,3 @@ def high_low_filter(nutri_component, high, low, data):
         for index, value in top_1.items():
             res.append({f"{db['food'][index]}, {nutrition_name}: {value}"})
         return res
-
-
-# high_low_filter('Vitamin D', high = True, low = False, data = 'DataBase/Food_Nutrition_Dataset.csv')
