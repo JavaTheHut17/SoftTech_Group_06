@@ -1,4 +1,28 @@
-* 8e3c99e 2024-09-08 by [JavaTheHut17] | Added:(PDF Files, Git Log.txt) (HEAD -> main, origin/main, origin/HEAD)
+* 79c8758 2024-10-06 by [M-HaekalAdlan] | completed (HEAD -> main, origin/main, origin/HEAD)
+* 7525be9 2024-10-06 by [JavaTheHut17] | F3-5 Coverage Report, Unit testing screenshot (complete)
+* e092563 2024-10-06 by [JavaTheHut17] | Testing, Screens, Misc
+* c86866d 2024-10-06 by [JavaTheHut17] | Cosmetic and feed back updates
+* f69d4ac 2024-10-06 by [JavaTheHut17] | GUI f3, F4, F5 (Complete)
+* 7442d6d 2024-10-06 by [M-HaekalAdlan] | f2 nutrition breakdown(complete)
+* d2e0e9f 2024-10-06 by [JavaTheHut17] | Range Filter Func added
+* 6c7e98d 2024-10-06 by [JavaTheHut17] | GUI fix
+* bda0faf 2024-10-06 by [JavaTheHut17] | GUI fix
+* 8080d8a 2024-10-06 by [JavaTheHut17] | GUI update
+* b962fb2 2024-10-05 by [JavaTheHut17] | GUI
+*   42f7e74 2024-10-05 by [M-HaekalAdlan] | Merge branch 'main' of https://github.com/JavaTheHut17/SoftTech_Group_06
+|\  
+| * 1e8cb41 2024-10-05 by [JavaTheHut17] | F5: High-Low filter & test case (complete)
+* | 38a85a8 2024-10-05 by [M-HaekalAdlan] | function 2 added (on progress)
+|/  
+* 81fb2d3 2024-10-05 by [M-HaekalAdlan] | function 1 added (search food)
+* 77bc9c8 2024-10-04 by [JavaTheHut17] | F4: High-Low filter & test case + f3 fix (complete)
+* 2f652e2 2024-10-04 by [JavaTheHut17] | F3: range filter & test case
+* b23a7ad 2024-10-03 by [JavaTheHut17] | F3: range filter & test case (in progress)
+* bde47f4 2024-10-03 by [JavaTheHut17] | F3: range filter & test case (in progress)
+* 0ec9b6e 2024-10-02 by [JavaTheHut17] | Misc
+* 48659a4 2024-10-02 by [JavaTheHut17] | M2- added
+* 5ed87f2 2024-09-08 by [JavaTheHut17] | Misc Changes
+* 8e3c99e 2024-09-08 by [JavaTheHut17] | Added:(PDF Files, Git Log.txt)
 * 0b2565e 2024-09-08 by [JavaTheHut17] | Misc Changes
 * 42f2e65 2024-09-08 by [JavaTheHut17] | Misc Changes
 * 0aa7f0e 2024-09-08 by [M-HaekalAdlan] | update s-number
@@ -25,6 +49,6 @@
 * | f5fb887 2024-08-05 by [JavaTheHut17] | Milestone 1 files.
 |/  
 * 66b3555 2024-07-27 by [JavaTheHut17] | Markdown to PDF
-* 52d77e2 2024-07-27 by [JavaTheHut17] | Test File Added (Production_01)
+* 52d77e2 2024-07-27 by [JavaTheHut17] | Test File Added
 * 03c2902 2024-07-27 by [JavaTheHut17] | Initial Python Program Added
 * f472f8a 2024-07-27 by [Luke H] | Initial commit
