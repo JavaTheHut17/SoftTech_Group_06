@@ -240,22 +240,22 @@ class MyFrame1 ( wx.Frame ):
 
         self.m_grid2.ClearGrid()
         self.m_grid2.Show(True)
-        processed_data = {}  # Use a dictionary to collect the processed data
+        processed_data = {}
 
         for item in data:
-            for key in item:  # Access the key from the dictionary
-                new_data = key.split(', ')  # Split by comma and space
+            for key in item:
+                new_data = key.split(', ')
                 food = new_data[0]
                 nutrient_val = new_data[1].split(': ')[1]
-                processed_data[food] = nutrient_val  # Assign food item as key and nutrient info as value
+                processed_data[food] = nutrient_val
         num_rows = len(processed_data)
         self.m_grid2.AppendRows(num_rows)
         if processed_data:
             self.m_grid2.SetColLabelValue(1, search_value)
             self.m_grid2.SetColLabelValue(0, 'Food')
             for row_index, (food, nutrient_val) in enumerate(processed_data.items()):
-                self.m_grid2.SetCellValue(row_index, 0, food)  # Set the food item in column 0
-                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)  # Set the nutrient value in column 1
+                self.m_grid2.SetCellValue(row_index, 0, food)
+                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)
             self.m_grid2.Refresh()
 
     def display_data_high_med_low(self, data, search_value):
@@ -264,19 +264,19 @@ class MyFrame1 ( wx.Frame ):
         processed_data = {}
 
         for item in data:
-            for key in item:  # Access the key from the dictionary
-                new_data = key.split(', ')  # Split by comma and space
+            for key in item:
+                new_data = key.split(', ')
                 food = new_data[0]
                 nutrient_val = new_data[1].split(': ')[1]
-                processed_data[food] = nutrient_val  # Assign food item as key and nutrient info as value
+                processed_data[food] = nutrient_val
         num_rows = len(processed_data)
         self.m_grid2.AppendRows(num_rows)
         if processed_data:
             self.m_grid2.SetColLabelValue(1, search_value)
             self.m_grid2.SetColLabelValue(0, 'Food')
             for row_index, (food, nutrient_val) in enumerate(processed_data.items()):
-                self.m_grid2.SetCellValue(row_index, 0, food)  # Set the food item in column 0
-                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)  # Set the nutrient value in column 1
+                self.m_grid2.SetCellValue(row_index, 0, food)
+                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)
             self.m_grid2.Refresh()
 
 
@@ -286,21 +286,21 @@ class MyFrame1 ( wx.Frame ):
         processed_data = {}
 
         for item in data:
-            for key in item:  # Access the key from the dictionary
-                new_data = key.split(', ')  # Split by comma and space
+            for key in item:
+                new_data = key.split(', ')
                 food = new_data[0]
                 nutrient_val = new_data[1].split(': ')[1]
-                processed_data[food] = nutrient_val  # Assign food item as key and nutrient info as value
+                processed_data[food] = nutrient_val
 
         num_rows = len(processed_data)
-        self.m_grid2.AppendRows(num_rows)  # Add extra rows if needed
+        self.m_grid2.AppendRows(num_rows)
 
         if processed_data:
             self.m_grid2.SetColLabelValue(1, search_value)
             self.m_grid2.SetColLabelValue(0, 'Food')
             for row_index, (food, nutrient_val) in enumerate(processed_data.items()):
-                self.m_grid2.SetCellValue(row_index, 0, food)  # Set the food item in column 0
-                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)  # Set the nutrient value in column 1
+                self.m_grid2.SetCellValue(row_index, 0, food)
+                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)
         self.m_grid2.Refresh()
 
 
