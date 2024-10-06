@@ -14,7 +14,7 @@ def high_low_filter(nutri_component, high, low, data):
     nutrition_name = nutri_component
     values_sorted = db[nutrition_name].sort_values(ascending=False)
     rows = len(values_sorted)
-    top_1 = values_sorted.head(int((0.01*rows)))
+    top_1 = values_sorted.head(int((0.5*rows)))
     res =[]
     if high:
         for index, value in top_1.items():
@@ -24,7 +24,8 @@ def high_low_filter(nutri_component, high, low, data):
     if low:
         values_sorted = db[nutrition_name].sort_values(ascending=True)
         rows = len(values_sorted)
-        top_1 = values_sorted.head(int((0.01*rows)))
+        top_1 = values_sorted.head(int((0.5*rows)))
         for index, value in top_1.items():
             res.append({f"{db['food'][index]}, {nutrition_name}: {value}"})
         return res
+

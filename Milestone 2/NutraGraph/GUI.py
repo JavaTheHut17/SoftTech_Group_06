@@ -43,13 +43,13 @@ class MyFrame1 ( wx.Frame ):
 
         wSizer3 = wx.WrapSizer( wx.HORIZONTAL, wx.WRAPSIZER_DEFAULT_FLAGS )
 
-        self.High = wx.Button( self, wx.ID_ANY, _(u"High"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.High = wx.ToggleButton( self, wx.ID_ANY, _(u"High"), wx.DefaultPosition, wx.DefaultSize, 0 )
         wSizer3.Add( self.High, 0, wx.ALL, 5 )
 
-        self.m_button13 = wx.Button( self, wx.ID_ANY, _(u"Medium"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_button13 = wx.ToggleButton( self, wx.ID_ANY, _(u"Medium"), wx.DefaultPosition, wx.DefaultSize, 0 )
         wSizer3.Add( self.m_button13, 0, wx.ALL, 5 )
 
-        self.Low = wx.Button( self, wx.ID_ANY, _(u"Low"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.Low = wx.ToggleButton( self, wx.ID_ANY, _(u"Low"), wx.DefaultPosition, wx.DefaultSize, 0 )
         wSizer3.Add( self.Low, 0, wx.ALL, 5 )
 
         self.max_value = wx.TextCtrl( self, wx.ID_ANY, _(u"Max Value"), wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -127,15 +127,31 @@ class MyFrame1 ( wx.Frame ):
             res_range_filter = range_filter(self.search_input(), self.max_val_input(),self.min_val_input(), self.db)
             return self.display_data_range_filter(res_range_filter, self.search_input())
 
+        if selected_function == "High Med Low Filter":
+            res_high_med_low = high_med_low_filter(self.search_input(), self.high_toggle(), self.medium_toggle(),
+                                                   self.low_toggle(), self.db)
+            return self.display_data_high_med_low(res_high_med_low, self.search_input())
+        if selected_function == "High Low Filter":
+            res_high_low_filter = high_low_filter(self.search_input(), self.high_toggle(), self.low_toggle(), self.db)
+            return self.display_high_low_filter(res_high_low_filter, self.search_input())
 
-    def high_toggle( self, event,):
-        event.Skip()
+    def high_toggle(self):
+        if self.High.GetValue():
+            return True
+        else:
+            return False
 
-    def medium_toggle( self, event ):
-        event.Skip()
+    def medium_toggle(self):
+        if self.m_button13.GetValue():
+            return True
+        else:
+            return False
 
-    def low_toggle( self, event ):
-        event.Skip()
+    def low_toggle( self):
+        if self.Low.GetValue():
+            return True
+        else:
+            return False
 
     def min_val_input( self):
         min_input = self.min_value.GetValue()
@@ -162,7 +178,8 @@ class MyFrame1 ( wx.Frame ):
                 food = new_data[0]
                 nutrient_val = new_data[1].split(': ')[1]
                 processed_data[food] = nutrient_val  # Assign food item as key and nutrient info as value
-
+        num_rows = len(processed_data)
+        self.m_grid2.AppendRows(num_rows)
         if processed_data:
             self.m_grid2.SetColLabelValue(1, search_value)
             self.m_grid2.SetColLabelValue(0, 'Food')
@@ -170,5 +187,50 @@ class MyFrame1 ( wx.Frame ):
                 self.m_grid2.SetCellValue(row_index, 0, food)  # Set the food item in column 0
                 self.m_grid2.SetCellValue(row_index, 1, nutrient_val)  # Set the nutrient value in column 1
             self.m_grid2.Refresh()
+
+    def display_data_high_med_low(self, data, search_value):
+        self.m_grid2.ClearGrid()
+        self.m_grid2.Show(True)
+        processed_data = {}
+
+        for item in data:
+            for key in item:  # Access the key from the dictionary
+                new_data = key.split(', ')  # Split by comma and space
+                food = new_data[0]
+                nutrient_val = new_data[1].split(': ')[1]
+                processed_data[food] = nutrient_val  # Assign food item as key and nutrient info as value
+        num_rows = len(processed_data)
+        self.m_grid2.AppendRows(num_rows)
+        if processed_data:
+            self.m_grid2.SetColLabelValue(1, search_value)
+            self.m_grid2.SetColLabelValue(0, 'Food')
+            for row_index, (food, nutrient_val) in enumerate(processed_data.items()):
+                self.m_grid2.SetCellValue(row_index, 0, food)  # Set the food item in column 0
+                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)  # Set the nutrient value in column 1
+            self.m_grid2.Refresh()
+
+
+    def display_high_low_filter(self, data, search_value):
+        self.m_grid2.ClearGrid()
+        self.m_grid2.Show(True)
+        processed_data = {}
+
+        for item in data:
+            for key in item:  # Access the key from the dictionary
+                new_data = key.split(', ')  # Split by comma and space
+                food = new_data[0]
+                nutrient_val = new_data[1].split(': ')[1]
+                processed_data[food] = nutrient_val  # Assign food item as key and nutrient info as value
+
+        num_rows = len(processed_data)
+        self.m_grid2.AppendRows(num_rows)  # Add extra rows if needed
+
+        if processed_data:
+            self.m_grid2.SetColLabelValue(1, search_value)
+            self.m_grid2.SetColLabelValue(0, 'Food')
+            for row_index, (food, nutrient_val) in enumerate(processed_data.items()):
+                self.m_grid2.SetCellValue(row_index, 0, food)  # Set the food item in column 0
+                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)  # Set the nutrient value in column 1
+        self.m_grid2.Refresh()
 
 
