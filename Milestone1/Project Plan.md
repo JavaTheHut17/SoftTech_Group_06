@@ -5,24 +5,24 @@
 
 ### Team members
 
-| Student No.  | Full Name              | GitHub Username | Contribution (sum to 100%) | 
-|--------------|------------------------|-----------------|----------------------------|
-| s5369275     | Luke Hewitt            | JavaTheHut17    | Equal                      |
-| s5396486     | Muhammad Budiman       | M-HaekalAdlan   | Equal                      | 
-| s5391821     | Ned Keyte              | nedkeyte        | 0%                         | 
+| Student No.  | Full Name              | GitHub Username | Contribution (sum to 100%)          | 
+|--------------|------------------------|-----------------|-------------------------------------|
+| s5369275     | Luke Hewitt            | JavaTheHut17    | Equal                               |
+| s5396486     | Muhammad Budiman       | M-HaekalAdlan   | Equal                               | 
+| s5391821     | Ned Keyte              | nedkeyte        | <span style="color:red"> 0% <span>  | 
 
 ### Brief Description of Contribution
 
 Please Describe what you have accomplished in this group project:
 
 - s5369275, Luke Hewitt
-  - Accomplishments: Project Plan 1 - 4.
-  
+  - Accomplishments: <span style="color:red"> Exec Summary F3, F4 & F5 + Test Cases, Project Plan Doc, GUI, UTR 3 - 5, CTR <span>
+
 - s5396486, Muhammad Budiman
-  - Accomplishments: Software Design 1 - 2.4 + 4.2.
-  
+  - Accomplishments: <span style="color:red"> Exec Summary F1 & F2 + Test Cases, Software Design Doc, GUI, UTR 1 & 2, gitlog <span>
+
 - s5391821, Ned Keyte
-  - Accomplishments: Software Design 3.1 - 4.1.
+  - Accomplishments: <span style="color:red">  Null   <span>
 
 
 <div style="page-break-after: always;"></div>
@@ -103,7 +103,7 @@ Nutra Graph will be designed to utilise nutritional databases and provide a grap
 1. Functions:
 
     - Search Food items: The project will provide a search bar that will enable users to search for specific types of food in the database.
-    - Nutrition Breakdown: The user selects a food item in the database for the software to break down and display in relative means, eg Pie Graph & Bar Graphs.
+    - Nutrition Breakdown: The user selects a food item in the database for the software to break down and display in relative means, <span style="color:red"> Bar Graphs. <span>
     - Nutrition Range Filter: Allows the user to select a nutritional component and input a min-max value and have relative foods listed that fall into that category.
     - Nutrition Level Filter: Allows users to filter food based on levels, High ( > 66% ), Medium ( 33% - 66% ) ,Low ( < 33% ) based on Fat, Protein, Carbohydrates, Sugar, and Nutritional Density.
     - Nutrition Component Organiser: Allows user to filter food on the database based on the Highest or Lowest nutritional component eg.. Foods with the highest Magnesium per 100g.
@@ -119,6 +119,13 @@ Nutra Graph will be designed to utilise nutritional databases and provide a grap
     - Software Design Flow Chart 
     - Structural Design Chart
     - Visual Design Wireframe
+    - <span style="color:red"> Unit test Report.
+    - <span style="color:red"> Exec Summary
+    - <span style="color:red"> Coverage Test Report
+    - <span style="color:red"> GUI.fbp GUI.pdf
+    
+
+
    
 
 3. Software
@@ -132,7 +139,7 @@ Nutra Graph will be designed to utilise nutritional databases and provide a grap
     As defined in the Project Deliverables.
 
     - Nutra Graph must allow users to search for food items in the database and retrieve said items.
-    - The software will allow users to select a food and have data displayed in a Pie & Bar Graph format.
+    - The software will allow users to select a food and have data<span style="color:red">  displayed in a Bar Graph format.
     - The software will allow users to select a nutritional component and input a min/max value to list food that falls into the selected range.
     - The software will allow users to filter foods by nutritional content level Low, Medium and High.
     - The software will allow users to filter food in the database based on the Highest or Lowest nutritional component levels, eg.. highest /lowest fat content. 
@@ -178,34 +185,34 @@ Include the Work Breakdown Structure (WBS) for the entire project. WBS should be
 
 Below defines the activity definition estimates for the Nutra Graph project. 
 
-| Activity #No | Activity Name                  | Brief Description                              | Duration | Responsible Team Members |
-|--------------|--------------------------------|------------------------------------------------|----------|--------------------------|
-| 1.1          | Define Project Overview        | Define Project Overview                        | 2 hrs    | All                      |
-| 1.2          | Assign Project Manager         | Assign project manager                         | 1 hrs    | All                      |
-| 1.3          | Assign Team Roles              | Assigning team roles                           | 1 hrs    | All                      |
-| 1.4          | Define Project Stakeholders    | Defining project stakeholders                  | 2 hrs    | Luke                     |
-| 1.5          | Define Project Scope           | Defining Project scope                         | 2 hrs    | Luke                     |
-| 2.1          | Create Project Plan            | Creating project plan                          | 3 Day    | Luke                     |
-| 2.2          | Activity Definition Estimation | Estimating Activity Times                      | 1 Day    | Luke                     |
-| 2.3          | Create WBS                     | Creating Work Break down Structure             | 1 Day    | Luke                     |
-| 2.4          | Create Gantt Chart             | Creating Gantt Chart                           | 2 Day    | Luke                     |
-| 3.1          | Define System Vision           | Defining System Vision                         | 1 Day    | Muhammad                 |
-| 3.2          | Define User Requirements       | Defining User requirements                     | 1 Day    | Muhammad                 |
-| 3.3          | Define Software Requirements   | Defining software requirements for the system. | 1 Day    | Muhammad                 |
-| 3.4          | Use case's + Diagram           | Create the Use cases for the system & Diagram  | 2 Day    | Muhammad                 |
-| 3.5          | Software Design & Components   | Software Design flow chart + System Components | 1 Day    | Ned                      |
-| 3.6          | Structural Design              | Defining Data Structure + data sources         | 1 Day    | Ned                      |
-| 3.7          | Detailed Design                | Sudo code for software functions               | 1 Day    | Ned                      |
-| 3.8          | Wireframe Design               | Wireframe design of GUI                        | 1 Day    | Muhammad                 |
-| 4.1          | GUI Development                | GUI Development                                | 7 Day    | All                      |
-| 4.2          | Database Integration           | Database integration                           | 7 Day    | All                      |
-| 4.3          | Database Algorithm             | Algorithm and sorting of database              | 6 Day    | All                      |
-| 4.4          | Pie & Bar Graph Integration    | Integration of Pie and bar graph for project   | 3 Day    | All                      |
-| 5.1          | Integration Testing            | Testing of software                            | 1 Day    | All                      |
-| 5.2          | User Acceptance Testing        | User Acceptance Testing                        | 1 Day    | All                      |
-| 5.3          | Bug Fixes                      | rectification of any bugs in software.         | 3 Day    | All                      |
-| 6.1          | Document Handover              | Submission                                     | 2 hrs    | All                      |
-| 6.2          | Software Deployment            | Software Deployment                            | 2 hrs    | All                      |
+| Activity #No | Activity Name                                         | Brief Description                                                | Duration                            | Responsible Team Members                  |
+|--------------|-------------------------------------------------------|------------------------------------------------------------------|-------------------------------------|-------------------------------------------|
+| 1.1          | Define Project Overview                               | Define Project Overview                                          | 2 hrs                               | All                                       |
+| 1.2          | Assign Project Manager                                | Assign project manager                                           | 1 hrs                               | All                                       |
+| 1.3          | Assign Team Roles                                     | Assigning team roles                                             | 1 hrs                               | All                                       |
+| 1.4          | Define Project Stakeholders                           | Defining project stakeholders                                    | 2 hrs                               | Luke                                      |
+| 1.5          | Define Project Scope                                  | Defining Project scope                                           | 2 hrs                               | Luke                                      |
+| 2.1          | Create Project Plan                                   | Creating project plan                                            | 3 Day                               | Luke                                      |
+| 2.2          | Activity Definition Estimation                        | Estimating Activity Times                                        | 1 Day                               | Luke                                      |
+| 2.3          | Create WBS                                            | Creating Work Break down Structure                               | 1 Day                               | Luke                                      |
+| 2.4          | Create Gantt Chart                                    | Creating Gantt Chart                                             | 2 Day                               | Luke                                      |
+| 3.1          | Define System Vision                                  | Defining System Vision                                           | 1 Day                               | Muhammad                                  |
+| 3.2          | Define User Requirements                              | Defining User requirements                                       | 1 Day                               | Muhammad                                  |
+| 3.3          | Define Software Requirements                          | Defining software requirements for the system.                   | 1 Day                               | Muhammad                                  |
+| 3.4          | Use case's + Diagram                                  | Create the Use cases for the system & Diagram                    | 2 Day                               | Muhammad                                  |
+| 3.5          | Software Design & Components                          | Software Design flow chart + System Components                   | 1 Day                               | Ned                                       |
+| 3.6          | Structural Design                                     | Defining Data Structure + data sources                           | 1 Day                               | Ned                                       |
+| 3.7          | Detailed Design                                       | Sudo code for software functions                                 | 1 Day                               | Ned                                       |
+| 3.8          | Wireframe Design                                      | Wireframe design of GUI                                          | 1 Day                               | Muhammad                                  |
+| 4.1          | GUI Development                                       | GUI Development                                                  | 7 Day                               | All                                       |
+| 4.2          | <span style="color:red"> Function Development         | <span style="color:red"> Development of functions                | <span style="color:red"> 4 Day      | All                                       | 
+| 4.3          | <span style="color:red"> Function Integration <span>  | <span style="color:red"> integrating functions into GUI  <span>  | <span style="color:red">  1 Day     | All                                       |
+| 4.4          | <span style="color:red">  Bar Graph Integration       | Integration of Pie and bar graph for project                     | <span style="color:red">  1 Day     | <span style="color:red"> Muhammad  <span> |
+| 5.1          | Integration Testing                                   | Testing of software                                              | 1 Day                               | <span style="color:red"> Luke <span>      |
+| 5.2          | User Acceptance Testing                               | User Acceptance Testing                                          | 1 Day                               | All                                       |
+| 5.3          | Bug Fixes                                             | rectification of any bugs in software.                           | <span style="color:red">  1 Day     | All                                       |
+| 6.1          | Document Handover                                     | Submission                                                       | <span style="color:red">  1 hrs     | <span style="color:red"> Luke             |
+| 6.2          | Software Deployment                                   | Software Deployment                                              | <span style="color:red"> 1 hrs      | <span style="color:red"> Luke             |
 
 
 ## 4. Gantt Chart

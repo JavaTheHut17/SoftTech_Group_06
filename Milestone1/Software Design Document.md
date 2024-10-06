@@ -113,6 +113,7 @@ o	Clear and detailed nutritional data
 o	Easy to understand breakdown of macronutrients
 
 ### 2.2	Software Requirements
+<span style="color:red"> 
 Here are some software requirements for the project:
 1.	Search functionality 
 -	The system shall provide a search bar where users can input a food item to retrieve its nutritional value
@@ -120,9 +121,9 @@ Here are some software requirements for the project:
 -	The system shall have filter functionality where users can filter it based on their preference
 2.	Viewing nutritional information
 -	The system shall display a detailed nutritional profile for each food item, including calories, fats, carbohydrates, proteins, vitamins, and minerals.
-
-3.	Sorting Food items
-- The system will allow users to sorting food based on nutrient information
+<span>
+3.<span style="color:red"> 	Sorting Food items
+- <span style="color:red"> The system will allow users to sorting food based on nutrient information
 
 ### 2.3 Use Case Diagram
  

@@ -1,27 +1,11 @@
 # Unit Testing Report
 
 Please provide your GitHub repository link.
-### GitHub Repository URL: https://github.com/XXXX/XXXXX.git
+### GitHub Repository URL: https://github.com/JavaTheHut17/SoftTech_Group_06
 
 ---
 
-The testing report should focus solely on <span style="color:red"> testing all the self-defined functions related to 
-the five required features.</span> There is no need to test the GUI components. Therefore, it is essential to decouple your code and separate the logic from the GUI-related code.
-
-
-## 1. **Test Summary**
-list all tested functions related to the five required features and the corresponding test functions designed to test 
-those functions, for example:
-
-| **Tested Functions** | **Test Functions**                               |
-|----------------------|--------------------------------------------------|
-| `add(x1,x2)`         | `test_add_valid()` <br> `test_add_invalid`       |
-| `divide(x1,x2)`      | `test_divide_valid()` <br> `test_divide_invalid` |
-| `...`                | `...`                                            |
-
----
-
-## 2. **Test Case Details**
+## 1. **Test Case Details**
 
 ### Test Case 1:
 - **Test Function/Module**
