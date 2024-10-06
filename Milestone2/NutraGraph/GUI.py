@@ -125,8 +125,73 @@ class MyFrame1 ( wx.Frame ):
         search_text = self.Search.GetValue()
         return search_text
 
+    def display_search_results(self, data):
+        self.m_grid2.ClearGrid()
+        self.m_grid2.Show(True)
+
+        nutrients = ['Fat', 'Carbohydrates', 'Protein', 'Sugars', 'Dietary Fiber', 'Caloric Value']
+        num_rows = min(20, len(data))
+        num_cols = len(nutrients) + 1
+
+        if self.m_grid2.GetNumberRows() > 0:
+            self.m_grid2.DeleteRows(0, self.m_grid2.GetNumberRows())
+        if self.m_grid2.GetNumberCols() > 0:
+            self.m_grid2.DeleteCols(0, self.m_grid2.GetNumberCols())
+
+        self.m_grid2.AppendRows(num_rows)
+        self.m_grid2.AppendCols(num_cols)
+
+        # Set column labels
+        self.m_grid2.SetColLabelValue(0, "Food")
+        for col_index, nutrient in enumerate(nutrients, start=1):
+            self.m_grid2.SetColLabelValue(col_index, nutrient)
+
+        for row_index, food_item in enumerate(data[:num_rows]):
+            food_name = food_item['food']
+            self.m_grid2.SetCellValue(row_index, 0, food_name)
+
+            for col_index, nutrient in enumerate(nutrients, start=1):
+                nutrient_value = str(food_item[nutrient])  # Convert to string for grid display
+                self.m_grid2.SetCellValue(row_index, col_index, nutrient_value)
+
+        self.m_grid2.Refresh()
+
+    def display_nutrition_breakdown(self, result):
+        self.m_grid2.ClearGrid()
+        self.m_grid2.Show(True)
+
+        nutrients = ['Fat', 'Carbohydrates', 'Protein', 'Sugars', 'Dietary Fiber', 'Caloric Value']
+
+        if isinstance(result, dict):
+            self.m_grid2.AppendRows(1)
+            self.m_grid2.AppendCols(len(nutrients) + 1)
+
+            self.m_grid2.SetColLabelValue(0, "Food")
+            for col_index, nutrient in enumerate(nutrients, start=1):
+                self.m_grid2.SetColLabelValue(col_index, nutrient)
+
+            food_name = list(result.keys())[0]
+            self.m_grid2.SetCellValue(0, 0, food_name)
+
+            for col_index, nutrient in enumerate(nutrients, start=1):
+                nutrient_value = str(result[food_name].get(nutrient, 'N/A'))  # Safely access nutrient values
+                self.m_grid2.SetCellValue(0, col_index, nutrient_value)
+
+        self.m_grid2.Refresh()
+
     def func_choice(self):
         selected_function = self.Function.GetString(self.Function.GetSelection())
+
+        if selected_function == "Search":
+            self.label.SetLabel("Please enter a keyword to search for food items.")
+            result = search_food(self.search_input(), self.db)
+            self.display_search_results(result)
+
+        elif selected_function == 'Nutrition Breakdown':
+            self.label.SetLabel("Please enter a food item for nutrition breakdown.")
+            result = nutrition_breakdown(self.search_input(), self.db)
+            self.display_nutrition_breakdown(result)
+
         if selected_function == 'Range Filter':
             self.label.SetLabel("Please enter: Min and Max value")
             res_range_filter = range_filter(self.search_input(), self.max_val_input(),self.min_val_input(), self.db)

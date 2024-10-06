@@ -25,75 +25,94 @@ those functions, for example:
 
 ### Test Case 1:
 - **Test Function/Module**
-  - `test_divide_valid()`
-  - `test_divide_invalid()`
+  - `test_search_food_keyword_found()`
+  - `test_search_food_keyword_partial_match()`
+  - `test_search_food_keyword_not_found()`
+  - `test_search_food_invalid_db()`
 - **Tested Function/Module**
-  - `divide(a, b)`
+  - `search_food(keyword, data)`
 - **Description**
-  - A brief description of the tested function's usage, including its purpose, input, and output.
+  - test the search food items function on a variety of inputs and testcases.
 - **1) Valid Input and Expected Output**  
 
-| **Valid Input**               | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 2)`               | `5`                 |
-| `divide(10, -2)`              | `-5`                |
-| `add more cases in necessary` | `...`               |
+| **Valid Input**                 | **Expected Output**                               |
+|---------------------------------|---------------------------------------------------|
+| `search_food('watermelon', db)` | `['watermelon', 'watermelon seed kernels dried']` |
+| `search_food('phosphorus', db)`  | `['phosphorus']`                                  |
+
 
 - **1) Code for the Test Function**
 ```python
-def test_divide_valid():
-    assert divide(10, 2) == 5
-    assert divide(10, -2) == -5
+def test_search_food_keyword_found():
+    expect_res = ['watermelon', 'watermelon seed kernels dried']
+
+    func_res = search_food('watermelon', db)
+
+    assert func_res == expect_res
 ```
 - **2) Invalid Input and Expected Output**
 
 | **Invalid Input**             | **Expected Output** |
 |-------------------------------|---------------------|
-| `divide(10, 0)`               | `Handle Exception`  |
-| `add more cases in necessary` | `...`               |
+| `search_food('slurpee', db)`               | `'No matches found for keyword: slurpee"`  |
+| `search_food('cheese', 'Invalid_DB.csv')` | `"Error: Database file not found."`               |
 
 - **2) Code for the Test Function**
 ```python
-def test_divide_invalid():
-    with pytest.raises(ValueError) as exc_info:
-        divide(10, 0)
-    assert exc_info.type is ValueError
+def test_search_food_keyword_not_found():
+    expect_res = "No matches found for keyword: slurpee"
+
+    func_res = search_food('slurpee', db)
+
+    assert func_res == expect_res
+
+def test_search_food_invalid_db():
+    expect_res = "Error: Database file not found."
+
+    func_res = search_food('cheese', 'Invalid_DB.csv')
+
+    assert func_res == expect_res
+
 ```
 ### Test Case 2:
 - **Test Function/Module**
-  - `test_divide_valid()`
-  - `test_divide_invalid()`
+  - `test_nutrition_breakdown_valid_food()`
+  - `test_nutrition_breakdown_invalid_food()`
+  - `test_nutrition_breakdown_invalid_db()`
 - **Tested Function/Module**
-  - `divide(a, b)`
+  - `nutrition_breakdown(food_name, data)`
 - **Description**
-  - A brief description of the tested function's usage, including its purpose, input, and output.
+  -  To test the nutritional breakdown based on the database
 - **1) Valid Input and Expected Output**  
 
-| **Valid Input**               | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 2)`               | `5`                 |
-| `divide(10, -2)`              | `-5`                |
-| `add more cases in necessary` | `...`               |
+| **Valid Input**                           | **Expected Output**                                   |
+|-------------------------------------------|-------------------------------------------------------|
+| `nutrition_breakdown('cream cheese', db)` | `"Nutritional breakdown for cream cheese displayed."` |
+| `nutrition_breakdown('watermelon', db)`   | `"Nutritional breakdown for watermelon displayed."`   |
+
 
 - **1) Code for the Test Function**
 ```python
-def test_divide_valid():
-    assert divide(10, 2) == 5
-    assert divide(10, -2) == -5
+def test_nutrition_breakdown_valid_food():
+    result = nutrition_breakdown('cream cheese', db)
+    assert result == "Nutritional breakdown for cream cheese displayed."
 ```
 - **2) Invalid Input and Expected Output**
 
-| **Invalid Input**             | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 0)`               | `Handle Exception`  |
-| `add more cases in necessary` | `...`               |
+| **Invalid Input**                                       | **Expected Output** |
+|---------------------------------------------------------|---------------------|
+| `nutrition_breakdown('slurpee', db)`                    | `"Error: slurpee not found in the database."`  |
+| `nutrition_breakdown('cream cheese', 'Invalid_DB.csv')` | `"Error: Database file not found."`               |
 
 - **2) Code for the Test Function**
 ```python
-def test_divide_invalid():
-    with pytest.raises(ValueError) as exc_info:
-        divide(10, 0)
-    assert exc_info.type is ValueError
+def test_nutrition_breakdown_invalid_food():
+    result = nutrition_breakdown('slurpee', db)
+    assert result == "Error: slurpee not found in the database."
+
+def test_nutrition_breakdown_invalid_db():
+    result = nutrition_breakdown('cream cheese', 'Invalid_DB.csv')
+    assert result == "Error: Database file not found."
 ```
 
 ### Test Case 3:

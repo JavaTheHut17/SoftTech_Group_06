@@ -6,35 +6,37 @@
 
 You should use your software to prepare an executive summary as outlined below for the five required features.
 
-## 1. [Feature 1 Name]
+## 1. Search Food Items
 ### Description  
-Briefly describe what this feature does.
+This feature allows users to search for a specific food in the database by typing it in the search box.
 
 ### Steps
-1. Step-by-step instructions for using this feature.
-2. Add additional steps as needed.
+1. Type the food name in the search box
+2. select 'search' via the drop-down bar
+3. click submit button
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.  
-![1](images/visual_design.png)
+![1](../Milestone2/images/Search_food_items_screen1.png)
 
-![2](images/visual_design.png)
+![2](../Milestone2/images/Search_food_items_screen2.png)
 
 ---
 
-## 2. [Feature 2 Name]
+## 2. Nutrition Breakdown
 ### Description  
-Briefly describe what this feature does.
+The nutrition breakdown function takes a selected food item from the dataset and displays its detailed nutritional values such as caloric value, fat, carbohydrates, protein, sugars, and dietary fiber in a bar graph.
 
 ### Steps
-1. Step-by-step instructions for using this feature.
-2. Add additional steps as needed.
+1. input the food name in the search box
+2. select nutritional breakdown via drop-down bar
+3. click submit
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.  
-![1](images/visual_design.png)
+![1](../Milestone2/images/Nutrition_breakdown_screen1.png)
 
-![2](images/visual_design.png)
+![2](../Milestone2/images/Nutrition_breakdown_screen2.png)
 
 ---
 
