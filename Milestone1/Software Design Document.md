@@ -113,13 +113,16 @@ o	Clear and detailed nutritional data
 o	Easy to understand breakdown of macronutrients
 
 ### 2.2	Software Requirements
-Define the functionality the software will provide. This section should list requirements formally, often using the word "shall" to describe functionalities.
+Here are some software requirements for the project:
+1.	Search functionality 
+-	The system shall provide a search bar where users can input a food item to retrieve its nutritional value
+-	The system shall allow user to find food by category, such as dairy, vegetables, meat
+-	The system shall have filter functionality where users can filter it based on their preference
+2.	Viewing nutritional information
+-	The system shall display a detailed nutritional profile for each food item, including calories, fats, carbohydrates, proteins, vitamins, and minerals.
 
-Example Functional Requirements:  
-- R1.1 The program shall accept multiple file names as arguments from the command line.  
-- R1.2 Each file name can be a simple file name or include the full path of the file with one or more levels.  
-
-- etc …
+3.	Sorting Food items
+- The system will allow users to sorting food based on nutrient information
 
 ### 2.3 Use Case Diagram
  
