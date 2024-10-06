@@ -16,16 +16,21 @@ def nutrition_breakdown(food_name, data):
     if food_item.empty:
         return f"Error: {food_name} not found in the database."
 
-    nutrients = ['Fat', 'Carbohydrates', 'Protein', 'Sugars', 'Dietary Fiber']
+    nutrients = ['Caloric Value', 'Fat', 'Carbohydrates', 'Protein', 'Sugars', 'Dietary Fiber']
     values = food_item[nutrients].iloc[0]
 
     if values.sum() == 0:
         return f"No nutritional data available for {food_name}."
 
-    plt.figure(figsize=(6, 6))
-    plt.pie(values, labels=nutrients, autopct='%1.1f%%', startangle=90, colors=['#ff9999','#66b3ff','#99ff99','#ffcc99','#c2c2f0'])
-    plt.title(f'Nutritional Breakdown of {food_name}')
-    plt.axis('equal')
+    plt.figure(figsize=(8, 6))
+    bars = plt.bar(nutrients, values, color=['#ff9999', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0'])
+
+    for bar in bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width() / 2, yval, round(yval, 2), ha='center', va='bottom')
+
+    plt.ylabel('Grams')
+    plt.title(f'Nutritional Breakdown of {food_name} (in grams)')
     plt.show()
 
     return f"Nutritional breakdown for {food_name} displayed."
