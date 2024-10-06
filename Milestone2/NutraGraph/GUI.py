@@ -120,7 +120,6 @@ class MyFrame1 ( wx.Frame ):
     def __del__( self ):
         pass
 
-    # Virtual event handlers, override them in your derived class
     def search_input( self):
         search_text = self.Search.GetValue()
         return search_text
@@ -141,7 +140,6 @@ class MyFrame1 ( wx.Frame ):
         self.m_grid2.AppendRows(num_rows)
         self.m_grid2.AppendCols(num_cols)
 
-        # Set column labels
         self.m_grid2.SetColLabelValue(0, "Food")
         for col_index, nutrient in enumerate(nutrients, start=1):
             self.m_grid2.SetColLabelValue(col_index, nutrient)
@@ -174,7 +172,7 @@ class MyFrame1 ( wx.Frame ):
             self.m_grid2.SetCellValue(0, 0, food_name)
 
             for col_index, nutrient in enumerate(nutrients, start=1):
-                nutrient_value = str(result[food_name].get(nutrient, 'N/A'))  # Safely access nutrient values
+                nutrient_value = str(result[food_name].get(nutrient, 'N/A'))
                 self.m_grid2.SetCellValue(0, col_index, nutrient_value)
 
         self.m_grid2.Refresh()
