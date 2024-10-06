@@ -27,16 +27,18 @@ class MyFrame1 ( wx.Frame ):
     db = 'DataBase/Food_Nutrition_Dataset.csv'
 
     def __init__( self, parent ):
-        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 973,733 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition,
+                            size = wx.Size( 973,733 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
         self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
 
         bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
-        self.Search = wx.TextCtrl( self, wx.ID_ANY, _(u"Search"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.Search = wx.TextCtrl( self, wx.ID_ANY, _(u"Search"), wx.DefaultPosition, wx.Size(200,-1), 0 )
         bSizer1.Add( self.Search, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
-        FunctionChoices = [ _(u"Nutrition Breakdown"), _(u"Range Filter"), _(u"High Med Low Filter"), _(u"High Low Filter"), wx.EmptyString, wx.EmptyString, wx.EmptyString ]
+        FunctionChoices = [ _(u"Nutrition Breakdown"), _(u"Range Filter"), _(u"High Med Low Filter"),
+                            _(u"High Low Filter"), _(u"Search"), wx.EmptyString, wx.EmptyString, wx.EmptyString ]
         self.Function = wx.Choice( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, FunctionChoices, 0 )
         self.Function.SetSelection( 0 )
         bSizer1.Add( self.Function, 0, wx.ALL|wx.EXPAND, 5 )
@@ -60,6 +62,10 @@ class MyFrame1 ( wx.Frame ):
 
         self.Submit = wx.Button( self, wx.ID_ANY, _(u"Submit"), wx.DefaultPosition, wx.DefaultSize, 0 )
         wSizer3.Add( self.Submit, 0, wx.ALL, 5 )
+
+        self.label = wx.StaticText(self, wx.ID_ANY, "Please enter food item.", wx.DefaultPosition, wx.DefaultSize, 0)
+        wSizer3.Add( self.label, 0, wx.ALL, 5 )
+
 
         self.m_grid2 = wx.grid.Grid( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
 
@@ -86,7 +92,6 @@ class MyFrame1 ( wx.Frame ):
         self.m_grid2.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
         wSizer3.Add( self.m_grid2, 0, wx.ALL, 5 )
 
-
         bSizer1.Add( wSizer3, 1, wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
         bSizer8 = wx.BoxSizer( wx.VERTICAL )
@@ -94,9 +99,7 @@ class MyFrame1 ( wx.Frame ):
         self.m_panel2 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         bSizer8.Add( self.m_panel2, 1, wx.EXPAND, 5 )
 
-
         bSizer1.Add( bSizer8, 1, wx.EXPAND, 5 )
-
 
         self.SetSizer( bSizer1 )
         self.Layout()
@@ -113,6 +116,7 @@ class MyFrame1 ( wx.Frame ):
         self.max_value.Bind( wx.EVT_TEXT, self.max_val_input )
         self.min_value.Bind( wx.EVT_TEXT, self.min_val_input )
 
+
     def __del__( self ):
         pass
 
@@ -124,15 +128,18 @@ class MyFrame1 ( wx.Frame ):
     def func_choice(self):
         selected_function = self.Function.GetString(self.Function.GetSelection())
         if selected_function == 'Range Filter':
+            self.label.SetLabel("Please enter: Min and Max value")
             res_range_filter = range_filter(self.search_input(), self.max_val_input(),self.min_val_input(), self.db)
             return self.display_data_range_filter(res_range_filter, self.search_input())
 
         if selected_function == "High Med Low Filter":
             res_high_med_low = high_med_low_filter(self.search_input(), self.high_toggle(), self.medium_toggle(),
                                                    self.low_toggle(), self.db)
+            self.label.SetLabel("Please toggle: High, Medium, Or Low.")
             return self.display_data_high_med_low(res_high_med_low, self.search_input())
         if selected_function == "High Low Filter":
             res_high_low_filter = high_low_filter(self.search_input(), self.high_toggle(), self.low_toggle(), self.db)
+            self.label.SetLabel("Please toggle: High, Or Low.")
             return self.display_high_low_filter(res_high_low_filter, self.search_input())
 
     def high_toggle(self):
