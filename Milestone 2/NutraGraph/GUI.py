@@ -85,10 +85,10 @@ class MyFrame1 ( wx.Frame ):
 
         # Cell Defaults
         self.m_grid2.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
-        bSizer8.Add( self.m_grid2, 0, wx.ALL|wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+        bSizer8.Add(self.m_grid2, 0, wx.ALL | wx.EXPAND, 5)  # Removed wx.ALIGN_CENTER_HORIZONTAL
 
         self.m_panel2 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-        bSizer8.Add( self.m_panel2, 1, wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.TOP|wx.BOTTOM|wx.RIGHT, 5 )
+        bSizer8.Add( self.m_panel2, 1, wx.EXPAND, 5 )
 
 
         bSizer1.Add( bSizer8, 1, wx.EXPAND, 5 )
