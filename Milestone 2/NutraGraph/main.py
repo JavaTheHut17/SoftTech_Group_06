@@ -10,16 +10,8 @@ from GUI import MyFrame1 as MyFrame
 class MyMainFrame(MyFrame):
     def __init__(self, parent=None):
         super().__init__(parent)
+        self.m_grid2.Show(False)
 
-        # # Create a Matplotlib figure and add it to a wxPanel
-        # self.figure = plt.Figure()
-        # self.axes = self.figure.add_subplot(111)
-        # self.canvas = FigureCanvas(self, -1, self.figure)
-        #
-        # # Sample plot
-        # self.axes.plot([0, 1, 2], [1, 4, 9])
-
-        # Layout update
         self.Layout()
         self.Show(True)
 

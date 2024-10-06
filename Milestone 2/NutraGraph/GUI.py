@@ -64,7 +64,7 @@ class MyFrame1 ( wx.Frame ):
         self.m_grid2 = wx.grid.Grid( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
 
         # Grid
-        self.m_grid2.CreateGrid( 10, 10 )
+        self.m_grid2.CreateGrid( 25, 10 )
         self.m_grid2.EnableEditing( True )
         self.m_grid2.EnableGridLines( True )
         self.m_grid2.EnableDragGridSize( False )
@@ -116,7 +116,6 @@ class MyFrame1 ( wx.Frame ):
     def __del__( self ):
         pass
 
-
     # Virtual event handlers, override them in your derived class
     def search_input( self):
         search_text = self.Search.GetValue()
@@ -126,7 +125,8 @@ class MyFrame1 ( wx.Frame ):
         selected_function = self.Function.GetString(self.Function.GetSelection())
         if selected_function == 'Range Filter':
             res_range_filter = range_filter(self.search_input(), self.max_val_input(),self.min_val_input(), self.db)
-            return self.display_data(res_range_filter, self.search_input())
+            return self.display_data_range_filter(res_range_filter, self.search_input())
+
 
     def high_toggle( self, event,):
         event.Skip()
@@ -150,18 +150,25 @@ class MyFrame1 ( wx.Frame ):
         self.search_input()
         event.Skip()
 
-    def display_data(self, data, search_value):
+    def display_data_range_filter(self, data, search_value):
 
         self.m_grid2.ClearGrid()
-        if data:
+        self.m_grid2.Show(True)
+        processed_data = {}  # Use a dictionary to collect the processed data
+
+        for item in data:
+            for key in item:  # Access the key from the dictionary
+                new_data = key.split(', ')  # Split by comma and space
+                food = new_data[0]
+                nutrient_val = new_data[1].split(': ')[1]
+                processed_data[food] = nutrient_val  # Assign food item as key and nutrient info as value
+
+        if processed_data:
             self.m_grid2.SetColLabelValue(1, search_value)
             self.m_grid2.SetColLabelValue(0, 'Food')
-            for row_index, row in enumerate(data):
-                for col_index, item in enumerate(row):
-                    print(row_index, col_index, item)
-                    self.m_grid2.SetCellValue(row_index, col_index, item)
-
-
-                self.m_grid2.Refresh()
+            for row_index, (food, nutrient_val) in enumerate(processed_data.items()):
+                self.m_grid2.SetCellValue(row_index, 0, food)  # Set the food item in column 0
+                self.m_grid2.SetCellValue(row_index, 1, nutrient_val)  # Set the nutrient value in column 1
+            self.m_grid2.Refresh()
 
 
