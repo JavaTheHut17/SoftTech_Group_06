@@ -25,7 +25,8 @@ list all tested functions related to the five required features, for example:
 
 ### 2.1 Description
 
-Explain how you designed the test cases (i.e., test_all_functions.py) to reach 100% statement coverage.
+To achieve full test coverage, we designed and implemented each function separately and then wrote corresponding test cases for each function to ensure proper validation of their functionality, before adding and implementing all functions into 
+test_all_functions.py.
 
 ### 2.2 Testing Results
 
@@ -35,7 +36,8 @@ Explain how you designed the test cases (i.e., test_all_functions.py) to reach 1
 
 ### 3.1 Description
 
-Explain how you designed the test cases (i.e., test_all_functions.py) to reach 100% branch coverage.
+We designed the test cases for test-all-functions.py individually to ensure that all functions where tested to 
+100% coverage, this approach helped us to achieve a very high coverage score. 
 
 ### 3.2 Testing Results
 
